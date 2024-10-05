@@ -94,8 +94,6 @@ function TodoStructure(value: string, index: number) {
       document.querySelector(".completed-count")!.textContent = completeTodo.toString()
 
     }
-
-
     p?.classList.toggle("line-through");
     remainingTodo()
 
