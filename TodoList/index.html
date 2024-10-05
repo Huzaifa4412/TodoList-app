@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind Css CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="todo-list-container">
+        <div class="todo-list-header">
+            <h1>Todo List</h1>
+            <button class="add-todo-btn">Add Todo</button>
+        </div>
+        <div class="inputBar  relative h-[100px]">
+            <form action="" id="form">
+                <input autocomplete="off" autofocus placeholder="Enter your todo"
+                    class="w-[80%] h-[40px] top-[50%] rounded-lg outline-none text-slate-600 p-4 absolute left-[10%] inputBar"
+                    type="text" name="todo" id="todo">
+            </form>
+        </div>
+        <div class="todo-list-body">
+            <ul class="todo-list">
+                <!-- <li>
+                    <div class="checkbox">
+                        <input type="checkbox" class="checkbox-input" id="todo-${track}">
+                        <div class="delect">
+                            <i class="ri-delete-bin-2-line delect"></i>
+                        </div>
+                    </div>
+                    <p>Hello jee</p>
+                </li> -->
+
+                <!-- Data adds dinamically -->
+                <!-- Data from script.ts -->
+
+            </ul>
+        </div>
+        <div class="todo-list-footer">
+            <p>Completed: <span class="completed-count"></span></p>
+            <p>Remaining: <span class="remaining-count"></span></p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="animate.js"></script>
+    <script src="dist/script.js" type="module"></script>
+</body>
+
+</html>
